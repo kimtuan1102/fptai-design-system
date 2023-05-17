@@ -39,7 +39,7 @@ jobs:
                   run: pnpm build
 
                 - name: Publish to NPM
-                  run: pnpm publish -r --publish-branch ${{github.event.pull_request.base.ref}} --access public --tag lastest
+                  run: pnpm publish -r --publish-branch ${{github.event.pull_request.base.ref}} --access public --tag rc
                   env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
                     
