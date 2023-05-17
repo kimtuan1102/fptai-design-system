@@ -30,7 +30,7 @@ jobs:
                   with: 
                     node-version: 18.x
                     cache: "pnpm"
-                - run: pnpm install --fronzen-lockfile
+                - run: pnpm install --frozen-lockfile
 
                 - name: Set release version in env
                   run: echo "RELEASE=$(node -e 'console.log(require("./package.json").version)')" >> $GITHUB_ENV
