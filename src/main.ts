@@ -1,1 +1,1 @@
-export * from "./stories/Button.vue"
+export {default as FPTAIButton} from "./stories/Button.vue"
