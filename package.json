@@ -2,6 +2,8 @@
   "name": "fptai-design-system",
   "version": "0.0.3",
   "packageManager": "pnpm@8.5.1",
+  "main": "src/main.ts",
+  "import": "src/main.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
